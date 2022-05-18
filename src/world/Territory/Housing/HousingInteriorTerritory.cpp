@@ -180,6 +180,7 @@ void Sapphire::World::Territory::Housing::HousingInteriorTerritory::spawnHousing
     objectSpawnPkt->data().containerOffset = static_cast< uint8_t >( slot );
 
     objectSpawnPkt->data().object.itemId = item->getAdditionalData() & 0xFFFF;
+    objectSpawnPkt->data().object.stain = item->getStain();
     objectSpawnPkt->data().object.rotation = item->getRot();
     objectSpawnPkt->data().object.pos = item->getPos();
 

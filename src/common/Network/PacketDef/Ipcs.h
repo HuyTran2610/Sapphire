@@ -324,12 +324,12 @@ namespace Sapphire::Network::Packets
   */
   enum ClientZoneIpcType : uint16_t
   {
-    PingHandler = 0x00B6, // updated 6.11 testing
-    InitHandler = 0x0216, // updated 6.11 testing
-    FinishLoadingHandler = 0x0104, // updated 6.11 testing
-    SocialListHandler = 0x0214, // updated 6.11 testing
-    BlackListHandler = 0x0082, // updated 6.11 testing
-    LinkshellListHandler = 0x009D, // updated 6.11 testing
+    PingHandler = 0x00B6, // updated 6.11
+    InitHandler = 0x0216, // updated 6.11
+    FinishLoadingHandler = 0x0104, // updated 6.11
+    SocialListHandler = 0x0214, // updated 6.11
+    BlackListHandler = 0x0082, // updated 6.11
+    LinkshellListHandler = 0x009D, // updated 6.11
     MarketBoardSearch = 0x9999, // updated 5.58 hotfix
 
     LogoutHandler = 0x02CE, // updated 6.11
@@ -347,30 +347,30 @@ namespace Sapphire::Network::Packets
     PlaceFieldMarker = 0x028F, // Updated 6.11
     GMCommand1 = 0x0145, // updated 6.11
 
-    CFCommenceHandler = 0x0381, // updated 5.58 hotfix
+    CFCommenceHandler = 0x007B, // updated 6.11
 
-    CFCancelHandler = 0x02B2, // updated 5.58 hotfix
-    CFRegisterDuty = 0x01BD, // updated 5.58 hotfix
-    CFRegisterRoulette = 0x037A, // updated 5.58 hotfix
-    PlayTimeHandler = 0x0279, // updated 6.08
+    CFCancelHandler = 0x007B, // updated 6.11
+    CFRegisterDuty = 0x02B2, // updated 6.11
+    CFRegisterRoulette = 0x0517, // updated 6.11
+    PlayTimeHandler = 0x012A, // updated 6.11
 
     CFDutyInfoHandler = 0xF078, // updated 4.2
 
-    SocialReqSendHandler = 0x021C, // updated 6.08
-    SocialResponseHandler = 0x0193, // updated 6.08
+    SocialReqSendHandler = 0x0335, // updated 6.11
+    SocialResponseHandler = 0x0129, // updated 6.11
     CreateCrossWorldLS = 0x035D, // updated 5.58 hotfix
 
-    PartyChatHandler = 0x0065,
-    PartySetLeaderHandler = 0x036C, // updated 5.58 hotfix
-    LeavePartyHandler = 0x019D, // updated 5.58 hotfix
-    KickPartyMemberHandler = 0x0262, // updated 5.58 hotfix
-    DisbandPartyHandler = 0x0276, // updated 5.58 hotfix
+    PartyChatHandler = 0x0065, // updated 6.11
+    PartySetLeaderHandler = 0x016D, // updated 6.11
+    LeavePartyHandler = 0x0101, // updated 6.11
+    KickPartyMemberHandler = 0x00CA, // updated 6.11
+    DisbandPartyHandler = 0x03E7, // updated 6.11
 
-    ReqSearchInfoHandler = 0x014F, // updated 5.58 hotfix
+    ReqSearchInfoHandler = 0x0090, // updated 6.11
     ReqExamineSearchCommentHandler = 0x00E7, // updated 5.0
 
     ReqRemovePlayerFromBlacklist = 0x00B4, // updated 5.58 hotfix
-    PlayerSearchHandler = 0x037D, // updated 5.58 hotfix
+    PlayerSearchHandler = 0x02DC, // updated 6.11
 
     MarketBoardRequestItemListingInfo = 0x00F4, // updated 5.58 hotfix
     MarketBoardRequestItemListings = 0x0122, // updated 5.58 hotfix
@@ -383,15 +383,15 @@ namespace Sapphire::Network::Packets
 
     ReqMarketWishList = 0x00C3, // updated 5.58 hotfix
 
-    ReqJoinNoviceNetwork = 0x0129, // updated 4.2
+    ReqJoinNoviceNetwork = 0xF129, // updated 4.2 (F appended since it conflicts)
 
-    ReqCountdownInitiate = 0x02EC, // updated 5.58 hotfix
-    ReqCountdownCancel = 0x0068, // updated 5.58 hotfix
+    ReqCountdownInitiate = 0x03AC, // updated 6.11
+    ReqCountdownCancel = 0x0372, // updated 6.11 
 
     ZoneLineHandler = 0x00C3, // updated 5.58 hotfix
     DiscoveryHandler = 0x00D9, // updated 6.08
 
-    GMCommand2 = 0x0203, // updated 6.08
+    GMCommand2 = 0x00FB, // updated 6.11
 
     SkillHandler = 0x02EB, // updated 6.11
     AoESkillHandler = 0x0152, // updated 5.58 hotfix
@@ -400,7 +400,7 @@ namespace Sapphire::Network::Packets
 
     InventoryEquipRecommendedItems = 0x01C9, // updated 5.58 hotfix
 
-    ReqPlaceHousingItem = 0x0192, // updated 6.08
+    ReqPlaceHousingItem = 0x010B, // updated 6.11
     BuildPresetHandler = 0x0223, // updated 5.58 hotfix
 
     TalkEventHandler = 0x00A8, // updated 6.11
@@ -420,13 +420,13 @@ namespace Sapphire::Network::Packets
     LinkshellEventHandler = 0x016B, // updated 4.5
     LinkshellEventHandler1 = 0x016C, // updated 4.5
 
-    ReqEquipDisplayFlagsChange = 0x0252, // updated 6.08
+    ReqEquipDisplayFlagsChange = 0x00DC, // updated 6.11
 
-    LandRenameHandler = 0x028E, // updated 5.58 hotfix
-    HousingUpdateHouseGreeting = 0x0343, // updated 5.58 hotfix
-    HousingUpdateObjectPosition = 0x012C, // updated 5.58 hotfix
-    HousingEditExterior = 0x03B6, // updated 6.08
-    HousingEditInterior = 0x0249, // updated 6.08
+    LandRenameHandler = 0x0289, // updated 6.11
+    HousingUpdateHouseGreeting = 0x0247, // updated 6.11
+    HousingUpdateObjectPosition = 0x0233, // updated 6.11
+    HousingEditExterior = 0x02B4, // updated 6.11
+    HousingEditInterior = 0x0309, // updated 6.11
 
     SetSharedEstateSettings = 0x00D2, // updated 5.58 hotfix
 

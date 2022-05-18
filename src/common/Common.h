@@ -975,7 +975,8 @@ namespace Sapphire::Common
   struct HousingObject
   {
     uint32_t itemId;
-    uint32_t padding; // was itemrotation + unknown/pad, looks unused now
+    uint8_t stain;
+    uint8_t padding[3]; // was itemrotation + unknown/pad, looks unused now
     float rotation;
     Common::FFXIVARR_POSITION3 pos;
   };
