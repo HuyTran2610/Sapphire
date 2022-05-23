@@ -151,6 +151,8 @@ namespace Sapphire::Network::Packets
     BlackList = 0x02A3, // updated 6.11
 
     LinkshellList = 0x010D, // updated 6.11
+    CrossWorldLinkshellList = 0x00CD, // updated 6.11
+    FellowshipList = 0x03E7, // updated 6.11
 
     MailDeleteRequest = 0xF12B, // updated 5.0
 
@@ -189,7 +191,7 @@ namespace Sapphire::Network::Packets
     NpcSpawn = 0x02B1, // Updated 6.11
     NpcSpawn2 = 0x0083, // updated 6.11
 
-    SomeCustomiseChangePacketProbably = 0x00CD, // added 5.18
+    SomeCustomiseChangePacketProbably = 0xF0CD, // added 5.18 (Prepended F to prevent conflicts)
 
     PartyList = 0x026F, // updated 6.11
     PartyMessage = 0x0222, // updated 6.11
@@ -264,13 +266,13 @@ namespace Sapphire::Network::Packets
     LandSetInitialize = 0x03E5, // updated 6.11
     LandUpdate = 0x00D3, // updated 6.11
     YardObjectSpawn = 0x014B, // updated 6.11
-    HousingIndoorInitialize = 0x00E6, // updated 6.11
+    HousingIndoorInitialize = 0x0246, // updated 6.11
     LandPriceUpdate = 0x00FD, // updated 6.11
-    LandInfoSign = 0x0281, // updated 6.11
+    LandInfoSign = 0x0156, // updated 6.11
     LandRename = 0x0343, // updated 6.11
     HousingEstateGreeting = 0x01FE, // updated 6.11
     HousingUpdateLandFlagsSlot = 0x006B, // updated 6.11
-    HousingLandFlags = 0x0293, // updated 6.11
+    HousingLandFlags = 0x0118, // updated 6.11
     HousingShowEstateGuestAccess = 0x025E, // updated 6.11
 
     HousingObjectInitialize = 0x01B5, // updated 6.11
@@ -351,7 +353,7 @@ namespace Sapphire::Network::Packets
 
     CFCancelHandler = 0x007B, // updated 6.11
     CFRegisterDuty = 0x02B2, // updated 6.11
-    CFRegisterRoulette = 0x0517, // updated 6.11
+    CFRegisterRoulette = 0x0157, // updated 6.11
     PlayTimeHandler = 0x012A, // updated 6.11
 
     CFDutyInfoHandler = 0xF078, // updated 4.2
