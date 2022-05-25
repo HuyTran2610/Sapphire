@@ -46,8 +46,60 @@ namespace Sapphire::Network::Packets
     Ping = 0x0219, // updated 5.35 hotfix
     Init = 0x0185, // updated 5.35 hotfix
 
+<<<<<<< Updated upstream
     ActorFreeSpawn = 0x0239, // updated 5.35 hotfix
     InitZone = 0x03CD, // updated 5.35 hotfix
+=======
+    // Old Definitions that need to be here to compile
+    ActorFreeSpawn = 0x00AD, // updated 6.11
+    ChatBanned = 0xF06B,
+    InitSearchInfo = 0x010D, // updated 6.11
+
+    // Definitions that needed to be "changed" (with an F in front) to prevent conflicts
+
+    /////////////////////////////////////////////////
+
+    Ping = 0x01F4, // updated 6.11
+    Init = 0x0104, // updated 6.11
+
+    InitZone = 0x01F5, // Updated 6.11
+    PrepareZoning = 0x01CF, // Updated 6.11
+
+    EffectResult = 0x12a, // Updated 6.11a
+    EffectResultBasic = 0x00A8, // updated 6.11
+
+    ActorControl = 0x016F, // Updated 6.11
+    ActorControlSelf = 0x03AE, // Updated 6.11
+    ActorControlTarget = 0x01B2, // Updated 6.11
+    ActorCast = 0x0163, // Updated 6.11
+    ActorMove = 0x0397, // Updated 6.11
+    ActorSetPos = 0x0317, // Updated 6.11
+    ActorGauge = 0x02A7, // Updated 6.11
+
+    EventPlay = 0x85, // Updated 6.11A
+    EventPlay4 = 0x2F4,// Updated 6.11A
+    EventPlay8 = 0x176,// Updated 6.11A
+    EventPlay16 = 0x2D4,// Updated 6.11A
+    EventPlay32 = 0x2FF,// Updated 6.11A
+    EventPlay64 = 0x289,// Updated 6.11A
+    EventPlay128 = 0x3A5,// Updated 6.11A
+    EventPlay255 = 0xD9,// Updated 6.11A
+    EventStart = 0x0217, // Updated 6.11
+    EventFinish = 0x0096, // Updated 6.11
+
+    DirectorVars = 0x0306, // updated 6.11 or 0xC6 from my findings
+    SomeDirectorUnk1 = 0x00DB, // updated 6.11 or 0xCC, 0x122, 0x1AD, or 0x24F
+    SomeDirectorUnk2 = 0xF0C1, // updated 5.18
+    SomeDirectorUnk4 = 0x01AD, // Updated 6.11
+    SomeDirectorUnk8 = 0x028A, // updated 5.18
+    SomeDirectorUnk16 = 0x028C, // updated 5.18
+    DirectorPopUp = 0x03DF, // updated 5.58 hotfix
+    DirectorPopUp4 = 0x019B, // updated 5.58 hotfix
+    DirectorPopUp8 = 0xF271, // updated 5.58 hotfix
+     ///////// These last 3 are 0x0093, 0x00DA and 0x01CB, but don't know which is which
+
+    ///////////////////////////////////////////////////
+>>>>>>> Stashed changes
 
     EffectResult = 0x01C2, // updated 5.35 hotfix
     ActorControl = 0x02A4, // updated 5.35 hotfix
